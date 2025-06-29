@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdVantage Pro - Premium Advertisement Agency</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-rocket"></i>
+                <span>Bargath Nisha Ad Pro</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#marketplace" class="nav-link">Marketplace</a></li>
+                <li><a href="#dashboard" class="nav-link">Dashboard</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Transform Your Brand with <span class="gradient-text">Premium Advertising</span></h1>
+                <p class="hero-subtitle">Create, manage, and optimize your advertising campaigns with cutting-edge technology and expert insights.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="openCreateAdModal()">
+                        <i class="fas fa-plus"></i>
+                        Create Campaign
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('marketplace')">
+                        <i class="fas fa-shopping-cart"></i>
+                        Browse Ads
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="dashboard-preview">
+                    <div class="preview-header">
+                        <div class="preview-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="preview-content">
+                        <div class="preview-stats">
+                            <div class="stat-card">
+                                <div class="stat-icon"><i class="fas fa-chart-line"></i></div>
+                                <div class="stat-info">
+                                    <span class="stat-number">2.4M</span>
+                                    <span class="stat-label">Impressions</span>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon"><i class="fas fa-mouse-pointer"></i></div>
+                                <div class="stat-info">
+                                    <span class="stat-number">45.2K</span>
+                                    <span class="stat-label">Clicks</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="preview-chart">
+                            <div class="chart-bars">
+                                <div class="bar" style="height: 60%"></div>
+                                <div class="bar" style="height: 80%"></div>
+                                <div class="bar" style="height: 45%"></div>
+                                <div class="bar" style="height: 90%"></div>
+                                <div class="bar" style="height: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Premium Services</h2>
+                <p class="section-subtitle">Comprehensive advertising solutions tailored to your business needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Campaign Creation</h3>
+                    <p>Design and launch powerful advertising campaigns with our intuitive tools and expert guidance.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Multi-platform targeting</li>
+                        <li><i class="fas fa-check"></i> A/B testing tools</li>
+                        <li><i class="fas fa-check"></i> Real-time optimization</li>
+                    </ul>
+                    <button class="service-btn">Learn More</button>
+                </div>
+                <div class="service-card featured">
+                    <div class="service-badge">Most Popular</div>
+                    <div class="service-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Analytics & Insights</h3>
+                    <p>Advanced analytics dashboard with comprehensive reporting and actionable insights.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Custom dashboards</li>
+                        <li><i class="fas fa-check"></i> Conversion tracking</li>
+                        <li><i class="fas fa-check"></i> ROI optimization</li>
+                    </ul>
+                    <button class="service-btn">Learn More</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Audience Management</h3>
+                    <p>Precise audience targeting and segmentation for maximum campaign effectiveness.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Demographic targeting</li>
+                        <li><i class="fas fa-check"></i> Behavioral analysis</li>
+                        <li><i class="fas fa-check"></i> Lookalike audiences</li>
+                    </ul>
+                    <button class="service-btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marketplace Section -->
+    <section id="marketplace" class="marketplace">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Advertisement Marketplace</h2>
+                <p class="section-subtitle">Browse and purchase premium advertising opportunities</p>
+            </div>
+            <div class="marketplace-filters">
+                <div class="filter-group">
+                    <button class="filter-btn active" data-category="all">All Categories</button>
+                    <button class="filter-btn" data-category="digital">Digital</button>
+                    <button class="filter-btn" data-category="print">Print</button>
+                    <button class="filter-btn" data-category="broadcast">Broadcast</button>
+                    <button class="filter-btn" data-category="outdoor">Outdoor</button>
+                </div>
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search advertisements..." id="searchInput">
+                </div>
+            </div>
+            <div class="ads-grid" id="adsGrid">
+                <!-- Ads will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="dashboard">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Campaign Dashboard</h2>
+                <p class="section-subtitle">Manage and monitor your advertising campaigns</p>
+            </div>
+            <div class="dashboard-stats">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number" data-target="2400000">0</h3>
+                        <p class="stat-label">Total Impressions</p>
+                        <span class="stat-change positive">+12.5%</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-mouse-pointer"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number" data-target="45200">0</h3>
+                        <p class="stat-label">Total Clicks</p>
+                        <span class="stat-change positive">+8.3%</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number" data-target="1850">0</h3>
+                        <p class="stat-label">Conversions</p>
+                        <span class="stat-change positive">+15.7%</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number" data-target="125000">0</h3>
+                        <p class="stat-label">Revenue Generated</p>
+                        <span class="stat-change positive">+22.1%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard-content">
+                <div class="campaigns-table">
+                    <div class="table-header">
+                        <h3>Active Campaigns</h3>
+                        <button class="btn btn-primary" onclick="openCreateAdModal()">
+                            <i class="fas fa-plus"></i>
+                            New Campaign
+                        </button>
+                    </div>
+                    <div class="table-wrapper">
+                        <table id="campaignsTable">
+                            <thead>
+                                <tr>
+                                    <th>Campaign</th>
+                                    <th>Status</th>
+                                    <th>Budget</th>
+                                    <th>Impressions</th>
+                                    <th>CTR</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Table rows will be populated by JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Choose Your Plan</h2>
+                <p class="section-subtitle">Flexible pricing options for businesses of all sizes</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">99</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Up to 5 campaigns</li>
+                        <li><i class="fas fa-check"></i> Basic analytics</li>
+                        <li><i class="fas fa-check"></i> Email support</li>
+                        <li><i class="fas fa-check"></i> Standard templates</li>
+                    </ul>
+                    <button class="pricing-btn">Get Started</button>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">299</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Unlimited campaigns</li>
+                        <li><i class="fas fa-check"></i> Advanced analytics</li>
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                        <li><i class="fas fa-check"></i> Custom templates</li>
+                        <li><i class="fas fa-check"></i> A/B testing</li>
+                        <li><i class="fas fa-check"></i> API access</li>
+                    </ul>
+                    <button class="pricing-btn">Get Started</button>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">599</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Everything in Pro</li>
+                        <li><i class="fas fa-check"></i> White-label solution</li>
+                        <li><i class="fas fa-check"></i> Dedicated manager</li>
+                        <li><i class="fas fa-check"></i> Custom integrations</li>
+                        <li><i class="fas fa-check"></i> SLA guarantee</li>
+                    </ul>
+                    <button class="pricing-btn">Contact Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Ready to transform your advertising strategy? Let's talk!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Address</h4>
+                            <p>AVP Arts and Science College , Tirumuruganpoondi, Tiruppur ,Tamil Nadu 641603</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>bargathagency@avp.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-rocket"></i>
+                        <span>AdVantage Pro</span>
+                    </div>
+                    <p>Transforming businesses through innovative advertising solutions and cutting-edge technology.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Campaign Creation</a></li>
+                        <li><a href="#">Analytics & Insights</a></li>
+                        <li><a href="#">Audience Management</a></li>
+                        <li><a href="#">Creative Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AdVantage Pro by Bargath Nisha. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Create Ad Modal -->
+    <div id="createAdModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Create New Campaign</h2>
+                <span class="close" onclick="closeCreateAdModal()">&times;</span>
+            </div>
+            <form id="createAdForm" class="modal-form">
+                <div class="form-group">
+                    <label for="campaignName">Campaign Name</label>
+                    <input type="text" id="campaignName" name="campaignName" required>
+                </div>
+                <div class="form-group">
+                    <label for="campaignCategory">Category</label>
+                    <select id="campaignCategory" name="campaignCategory" required>
+                        <option value="">Select Category</option>
+                        <option value="digital">Digital Marketing</option>
+                        <option value="print">Print Advertising</option>
+                        <option value="broadcast">Broadcast Media</option>
+                        <option value="outdoor">Outdoor Advertising</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="campaignBudget">Budget ($)</label>
+                    <input type="number" id="campaignBudget" name="campaignBudget" min="100" required>
+                </div>
+                <div class="form-group">
+                    <label for="campaignDuration">Duration (days)</label>
+                    <input type="number" id="campaignDuration" name="campaignDuration" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="targetAudience">Target Audience</label>
+                    <input type="text" id="targetAudience" name="targetAudience" placeholder="e.g., Adults 25-45, Tech enthusiasts" required>
+                </div>
+                <div class="form-group">
+                    <label for="campaignDescription">Description</label>
+                    <textarea id="campaignDescription" name="campaignDescription" rows="4" required></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" onclick="closeCreateAdModal()">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Create Campaign</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Buy Ad Modal -->
+    <div id="buyAdModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Purchase Advertisement</h2>
+                <span class="close" onclick="closeBuyAdModal()">&times;</span>
+            </div>
+            <div id="buyAdContent" class="modal-form">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification -->
+    <div id="notification" class="notification">
+        <div class="notification-content">
+            <span id="notificationMessage"></span>
+            <button class="notification-close" onclick="closeNotification()">&times;</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
