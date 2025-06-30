@@ -1,9 +1,0 @@
-{
-  "redirects": [
-    {
-      "source": "/",
-      "destination": "/ad.html",
-      "permanent": true
-    }
-  ]
-}
